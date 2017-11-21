@@ -1,0 +1,30 @@
+workspace:
+  base: /go/src
+  path: github.com/tj/node-prune
+
+clone:
+  git:
+    image: plugins/git
+    depth: 50
+    tags: true
+
+pipeline:
+  build:
+    image: appleboy/golang-testing:1.9.2
+    pull: true
+    commands:
+      - make release
+    when:
+      event: [ tag ]
+      ref: [ refs/tags/* ]
+
+  release_tag:
+    image: plugins/github-release
+    secrets: [ github_release_api_key ]
+    group: release
+    files:
+      - dist/release/*
+    when:
+      event: [ tag ]
+      ref: [ refs/tags/* ]
+      local: false
