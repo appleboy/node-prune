@@ -1,0 +1,31 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "gt4qjONr5JL9rMCJuEznegBkh5o=",
+			"path": "github.com/apex/log",
+			"revision": "0296d6eb16bb28f8a0c55668affcf4876dc269be",
+			"revisionTime": "2017-07-26T18:07:45Z"
+		},
+		{
+			"checksumSHA1": "Nh2uyucrB2Iuo56IqTdwrziOQyU=",
+			"path": "github.com/apex/log/handlers/cli",
+			"revision": "0296d6eb16bb28f8a0c55668affcf4876dc269be",
+			"revisionTime": "2017-07-26T18:07:45Z"
+		},
+		{
+			"checksumSHA1": "tJd2T/eyW6ejAev7WzGxTeUVOPQ=",
+			"path": "github.com/dustin/go-humanize",
+			"revision": "bb3d318650d48840a39aa21a027c6630e198e626",
+			"revisionTime": "2017-11-10T20:55:13Z"
+		},
+		{
+			"checksumSHA1": "rJab1YdNhQooDiBWNnt7TLWPyBU=",
+			"path": "github.com/pkg/errors",
+			"revision": "f15c970de5b76fac0b59abb32d62c17cc7bed265",
+			"revisionTime": "2017-10-18T19:55:50Z"
+		}
+	],
+	"rootPath": "github.com/appleboy/node-prune"
+}
